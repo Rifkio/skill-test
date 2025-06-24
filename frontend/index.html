@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Project & Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button onclick="openProjectModal()">+ Add Project</button>
+  <div id="project-list"></div>
+
+  <!-- Modal Project -->
+  <div id="projectModal" class="modal">
+    <form id="projectForm">
+      <h2>Project</h2>
+      <input type="text" id="projectName" placeholder="Project Name" required />
+      <textarea id="projectDesc" placeholder="Description"></textarea>
+      <button type="submit">Save</button>
+      <button type="button" id="closeProjectModal">Cancel</button>
+      <button type="button" id="deleteProjectBtn" class="hidden" style="color:red;">Delete</button>
+    </form>
+  </div>
+
+  <!-- Modal Task -->
+  <div id="taskModal" class="modal">
+    <form id="taskForm">
+        <h2>Task</h2>
+        <input type="text" id="taskTitle" placeholder="Task Title" required />
+        <input type="number" id="taskWeight" placeholder="Weight" required />
+        <select id="taskStatus" required>
+            <option value="draft">draft</option>
+            <option value="in_progress">in progress</option>
+            <option value="done">done</option>
+        </select>
+        <button type="submit">Save</button>
+        <button type="button" id="closeTaskModal">Cancel</button>
+        <button type="button" id="deleteTaskBtn" class="hidden" style="color: red;">Delete</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "description": "Project",
+    "status": "draft",
+    "progress": 0
+  }
+]
